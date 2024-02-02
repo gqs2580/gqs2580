@@ -1,0 +1,41 @@
+.weather_game{
+    display: none;
+    justify-content: center;
+	transition: background-color 0.8s;
+    align-items: center;
+    align-items: center; 
+    float: left;
+    width: 80%;
+    height: 100%;
+    background-color: #a9f988;
+}
+.game_menu{
+    width: 50%;
+    height: 200px;
+    text-align: center;
+    font-size: 25px;
+    background-color: #fff;
+    line-height: 60px;
+    border-radius: 10px;
+
+}
+.game_menu h2{
+	transition: 0.8s;
+    border-bottom: 1px solid #54d837;
+    margin-bottom: 30px;
+}
+
+.game_menu p{
+    cursor: pointer;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: #78e64e;
+    color: black;
+	transition: 0.8s;
+}
+
+
+.grade span{
+	color: orangered;
+}

@@ -1,0 +1,92 @@
+.bigLook {
+    width: 80%;
+    height: 100%;
+	transition: background-color 0.5s;
+    float: left;
+    display: none;
+	background-color: rgb(147, 230, 116);
+	
+}
+.bigLookContainer{
+	float: left;
+	width: 75%;
+	height: 100%;
+	display: none;
+
+}
+.bigLookRight{
+	float: right;
+	transition: background-color 0.5s;
+	width: 25%;
+	height: 100%;
+}
+.bookLookselect>div:first-child{
+	margin-top: 40px;
+	width: 70%;
+	height: 40px;
+	position: relative;
+}	
+.bookLookselect>div:first-child img{
+	cursor: pointer;
+	width: 39px;
+	position: absolute;
+	right: -2px;
+	top: 2px;
+}
+.otherList>div:last-child{
+	border-right: 1px solid #111!important;
+}
+.other,.target{
+	box-sizing: border-box;
+	border-left: 1px solid #111;
+	border-top: 1px solid #111;
+	border-bottom: 1px solid #111;
+	text-indent: 20px;
+	position: relative;
+	float: left;
+	transition: 0.8s;
+	color: #888;
+	cursor: pointer;
+	background-color:  #5ed433;
+	font-size: 15px;
+	width: 33.3%;
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+}
+.otherList{
+	margin-top: 50px;
+	height: 60px;
+}
+.otherList img{
+	position: absolute;
+	top: 22px;
+	left: 7px;
+	width: 20px;
+}
+.bingPic{
+	width: 100%;
+	height: 30%;
+}
+.bookLookselect input{
+	box-shadow: 3px 3px 10px rgba(0,0,0,1);
+	border: 1px solid #222;
+	font-size: 15px;
+	text-indent: 10px;
+	outline: none;
+	height: 40px;
+	width: 100%;
+	border-radius: 10px;
+}
+
+
+
+.yibiaopan{
+	width: 100%;
+	height: 30%;
+	background-color: #71db40;
+
+}
+.bigLookRight h2{
+	margin-top: 50px;
+}

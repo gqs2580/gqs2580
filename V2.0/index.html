@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>实时天气</title>
+		<link rel="icon" href="./img/ikun.png">
+		<link rel="stylesheet" href="./css/index.css">
+	</head>
+
+	<body>
+		<div class="biggest">
+			<div class="header">
+				<div id="qs">QINGSHAN</div>天 气 查 询 系 统
+			</div>
+			<div class="select">
+				<div class="move_font">
+					<span>请</span>
+					<span>选</span>
+					<span>择</span>
+					<span>您</span>
+					<span>的</span>
+					<span>城</span>
+					<span>市</span>
+					<span id="weizhi"></span>
+				</div>
+				<div>
+					<select name="province_list" id="province_list">
+						<option value="陕西省">陕西省</option>
+					</select>
+					<select name="city_list" id="city_list">
+						<option value="宝鸡市">宝鸡市</option>
+					</select>
+					<select name="region_list" id="region_list">
+						<option value="金台区">
+							金台区
+						</option>
+					</select>
+					<button id="submit">
+						<span>进入</span>
+						<div></div>
+					</button>
+				</div>
+			</div>
+		</div>
+		<script src="./js/index.js"></script>
+	</body>
+
+</html>

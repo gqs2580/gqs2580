@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>用户界面</title>
+		<link rel="icon" href="./img/ikun.png">
+		<link rel="stylesheet" href="./css/user.css">
+		<link rel="stylesheet" href="./css/compareCity.css">
+		<link rel="stylesheet" href="./css/gameMenu.css">
+		<link rel="stylesheet" href="./css/gameMain.css">
+		<link rel="stylesheet" href="./css/bigLook.css">
+		<script src="./js/JSONDATA.js"></script>
+		<script src="./js/allProvinceIndex.js"></script>
+		<script src="./js/echarts.js"></script>
+		<script src="./js/china.js"></script>
+
+	</head>
+
+	<body>
+		<div class="top">
+			<div class="top_logo">
+				<img class="before" src="./img/logo.png" alt="">
+				<!-- <div class="line"></div> -->
+			</div>
+			<div class="top_right">
+				<h2 style="font-family: YouYuan;">你好 欢迎使用！</h2>
+				<span>
+
+				</span>
+
+			</div>
+		</div>
+
+
+		<div class="main">
+			<div class="tooltip">
+				<div class="address">
+					<img src="./img/定位.png" alt="">
+					<span>加载中</span>
+					<img src="./img/关闭.png" alt="">
+				</div>
+				<div class="tooltipWeatherInfo">
+					<span>无数据</span>
+					<div>
+						<div>无数据</div>
+						<div>无数据</div>
+					</div>
+				</div>
+				<p>更多信息请切换其他功能页</p>
+			</div>
+			<div class="left">
+				<div class="leftBorder"></div>
+				<div class="fold">
+
+				</div>
+	
+				<h1>系统导航菜单</h1>
+				<ul class="menu">
+					<li class="one">全省温度情况</li>
+					<li class="two">自定义 城市对比</li>
+					<li class="four" v-self="self">返回所在县区天气</li>
+					<li class="five">省份所有数据对比</li>
+					<li class="seven">一个天气小游戏</li>
+					<li class="six">主题颜色切换</li>
+					<li class="three">返回选择页</li>
+				</ul>
+			</div>
+			<div class="provinceData">
+			</div>
+
+			<div class="right" id="right">
+
+				<div class="base_city_weather_top">
+					<div>
+
+						<div class="selfWeatherInfo">
+							<div>
+								<span>宝鸡市</span>
+								<span>金台区</span>
+							</div>
+							<span class="update_time">中央电视台22:05发布</span>
+
+						</div>
+						<div class="temptu"><span>5℃</span><span>晴</span></div>
+						<div class="temp_info">
+							<span>
+								<img src="./img/winDicre.png" alt="">
+								<span>北风 0级</span>
+							</span>
+							<span>
+								<img src="./img/hum.png" alt="">
+								<span>湿度 92%</span>
+							</span>
+							<span>
+								<img src="./img/qiya.png" alt="">
+								<span>气压 969 hPa</span>
+							</span>
+						</div>
+						<div>
+							<span></span>
+							<span class="weather_tip">天有点冷，注意保暖哦~</span>
+						</div>
+						<span class="img_iocn">
+							<img src="./weatherIcon/多云.png" alt="">
+						</span>
+					</div>
+
+				</div>
+				<div class="base_city_weather_bottom">
+					<div class="title_top">
+						<div class="weather_title">
+							<span></span>
+							<span>七日天气预报</span>
+						</div>
+						<div class="lives_title">
+							<span></span>
+							<span>生活指数</span>
+						</div>
+					</div>
+					<div class="seven_day_weather">
+						<ul>
+							<li>
+								<p>昨天</p>
+								<p>12月03日</p>
+								<div class="li_top">
+									<p>多云</p>
+									<img src="./img/liImg.png" alt="">
+								</div>
+								<div class="chart">
+
+								</div>
+								<div class="li_bottom">
+									<img src="./img/liImg.png" alt="">
+									<p>晴</p>
+									<p>西南风 3级</p>
+								</div>
+							</li>
+							<li>
+								<p>今天</p>
+								<p>12月03日</p>
+								<div class="li_top">
+									<p>多云</p>
+									<img src="./img/liImg.png" alt="">
+								</div>
+								<div class="chart">
+
+								</div>
+								<div class="li_bottom">
+									<img src="./img/liImg.png" alt="">
+									<p>晴</p>
+									<p>西南风 3级</p>
+								</div>
+							</li>
+							<li>
+								<p>明天</p>
+								<p>12月03日</p>
+								<div class="li_top">
+									<p>多云</p>
+									<img src="./img/liImg.png" alt="">
+								</div>
+								<div class="chart">
+
+								</div>
+								<div class="li_bottom">
+									<img src="./img/liImg.png" alt="">
+									<p>晴</p>
+									<p>西南风 3级</p>
+								</div>
+							</li>
+							<li>
+								<p>后天</p>
+								<p>12月03日</p>
+								<div class="li_top">
+									<p>多云</p>
+									<img src="./img/liImg.png" alt="">
+								</div>
+								<div class="chart">
+
+								</div>
+								<div class="li_bottom">
+									<img src="./img/liImg.png" alt="">
+									<p>晴</p>
+									<p>西南风 3级</p>
+								</div>
+							</li>
+							<li>
+								<p>昨天</p>
+								<p>12月03日</p>
+								<div class="li_top">
+									<p>多云</p>
+									<img src="./img/liImg.png" alt="">
+								</div>
+								<div class="chart">
+
+								</div>
+								<div class="li_bottom">
+									<img src="./img/liImg.png" alt="">
+									<p>晴</p>
+									<p>西南风 3级</p>
+								</div>
+							</li>
+							<li>
+								<p>昨天</p>
+								<p>12月03日</p>
+								<div class="li_top">
+									<p>多云</p>
+									<img src="./img/liImg.png" alt="">
+								</div>
+								<div class="chart">
+
+								</div>
+								<div class="li_bottom">
+									<img src="./img/liImg.png" alt="">
+									<p>晴</p>
+									<p>西南风 3级</p>
+								</div>
+							</li>
+							<li>
+								<p>昨天</p>
+								<p>12月03日</p>
+								<div class="li_top">
+									<p>多云</p>
+									<img src="./img/liImg.png" alt="">
+								</div>
+								<div class="chart">
+
+								</div>
+								<div class="li_bottom">
+									<img src="./img/liImg.png" alt="">
+									<p>晴</p>
+									<p>西南风 3级</p>
+								</div>
+							</li>
+							<li>
+								<p>昨天</p>
+								<p>12月03日</p>
+								<div class="li_top">
+									<p>多云</p>
+									<img src="./img/liImg.png" alt="">
+								</div>
+								<div class="chart">
+
+								</div>
+								<div class="li_bottom">
+									<img src="./img/liImg.png" alt="">
+									<p>晴</p>
+									<p>西南风 3级</p>
+								</div>
+							</li>
+							<div class="weather_xian"></div>
+						</ul>
+					</div>
+
+					<div class="lives">
+						<ul>
+							<li>
+								<div>
+									<div>
+										<img src="./img/clothes.png" alt="">
+										<p>穿衣 较冷</p>
+									</div>
+									<div class="tips">
+										<span>适宜洗车，未来持续两天无雨天气</span>
+									</div>
+								</div>
+
+							</li>
+							<li>
+								<div>
+									<div>
+										<img src="./img/umbrella.png" alt="">
+										<p>穿衣 较冷</p>
+									</div>
+
+									<div class="tips">
+										<span>适宜洗车，未来持续两天无雨天气</span>
+									</div>
+								</div>
+
+							</li>
+							<li>
+								<div>
+									<div>
+										<img src="./img/yao.png" alt="">
+										<p>穿衣 较冷</p>
+									</div>
+									<div class="tips">
+										<span>适宜洗车，未来持续两天无雨天气</span>
+									</div>
+								</div>
+
+							</li>
+							<li>
+								<div>
+									<div>
+										<img src="./img/sport.png" alt="">
+										<p>穿衣 较冷</p>
+									</div>
+
+									<div class="tips">
+										<span>适宜洗车，未来持续两天无雨天气</span>
+									</div>
+								</div>
+
+							</li>
+							<li>
+								<div>
+									<div>
+										<img src="./img/smile.png"">
+										<p>穿衣 较冷</p>
+									</div>
+								
+									
+									<div class=" tips">
+										<span>适宜洗车，未来持续两天无雨天气</span>
+									</div>
+								</div>
+
+							</li>
+							<li>
+								<div>
+									<div>
+										<img src="./img/sun.png" alt="">
+										<p>穿衣 较冷</p>
+									</div>
+
+									<div class="tips">
+										<span>适宜洗车，未来持续两天无雨天气</span>
+									</div>
+								</div>
+
+							</li>
+
+						</ul>
+					</div>
+				</div>
+
+
+			</div>
+			<div class="compare_city">
+				<div class="compare_city_top">
+					<div>
+						<select class="compareProvinve">
+						</select>
+						<select class="compareSelectCity">
+							<option>太原市</option>
+						</select>
+						<button>选择此城市</button>
+						<button>开始对比</button>
+					</div>
+					<div class="select_city_list">
+						<ul>
+
+						</ul>
+					</div>
+				</div>
+				<div class="compare_city_bottom">
+					<div class="compare_city_bottom_son"></div>
+				</div>
+			</div>
+			<div class="weather_game">
+				<div class="game_menu">
+					<h2>天气消消乐</h2>
+					<p>开始游戏</p>
+				</div>
+				<div id="game">
+
+				</div>
+
+				<div class="gameOuterMenu">
+					<div class="grade">您的分数
+						<span>
+							0</span>
+					</div>
+					<span>难度切换
+						<div class="easy">简单<img src="./img/五角星.png"></div>
+						<div class="middle">中等<img src="./img/五角星.png"><img src="./img/五角星.png"></div>
+						<div class="difficulty">困难<img src="./img/五角星.png"><img src="./img/五角星.png"><img src="./img/五角星.png"></div>
+					</span>
+					<span>
+
+						棋盘颜色更改
+						<div>粉色</div>
+						<div>奶酪色</div>
+						<div>淡紫色</div>
+					</span>
+					<span>重新开始游戏</span>
+				</div>
+			</div>
+			<div class="bigLook">
+				<div class="bigLookContainer">
+
+				</div>
+				<div class="bigLookRight">
+					<div class="bookLookselect">
+						<div>
+							<input type="text" placeholder="请输入省份">
+							<img src="./img/搜索.png" alt="">
+						</div>
+					
+					</div>
+					<div class="otherList">
+						<div class="target" id="temp"><img src="./img/空气温度.png" alt="">气温对比</div>
+						<div class="other" id="wind"><img src="./img/风力.png" alt="">风力对比</div>
+						<div class="other" id="hum"><img src="./img/湿度.png" alt="">湿度对比</div>
+					</div>
+					<h2>市数据柱状图</h2>
+					<div class="bingPic">
+					</div>
+					<h2>市数据仪表看板</h2>
+				
+					<div class="yibiaopan">
+
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<script src="./js/user.js"></script>
+		<script src="./js/themeChange.js"></script>
+		<script src="./js/bigLook.js"></script>
+		<script src="./js/menuSelect.js"></script>
+		<script src="./js/loadingData.js"></script>
+		<script src="./js/switchFunction.js"></script>
+		<script src="./js/compareCityTable.js"></script>
+		<script src="./js/game.js"></script>
+	</body>
+
+</html>

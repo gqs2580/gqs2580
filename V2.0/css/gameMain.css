@@ -1,0 +1,175 @@
+
+#game {
+	position: relative;
+	left: -15%;
+	width: 750px;
+	height: 500px;
+	margin: 0 auto;
+	display: none;
+}
+
+#game li {
+	background-color: #fff;
+
+	/* pointer-events: none; */
+	float: left;
+	width: 46px;
+	height: 46px;
+	border: 2px solid skyblue;
+	overflow: hidden;
+
+}
+
+#game li img {
+	position: relative;
+	animation: come 0.3s normal linear;
+
+	transition: 0.3s;
+	width: 50px;
+}
+
+
+.gameOuterMenu {
+	line-height: 35px;
+
+	font-family:"YouYuan";
+	font-size: 20px;
+	position: relative;
+	display: none;
+	right: 15%;
+	position: absolute;
+}
+
+.gameOuterMenu>span {
+	cursor: pointer;
+	margin-top: 50px;
+	display: block;
+}
+
+.gameOuterMenu img{
+	margin-top: 0px;
+width: 17px;
+margin-left: 5px;
+}
+.grade {
+	width: 230px;
+	font-size: 35px;
+	font-weight: 800;
+	position: absolute;
+	top: -20%;
+	display: none;
+}
+
+@keyframes explode {
+	0% {
+		/* 开始时图片不变 */
+		transform: scale(1);
+		opacity: 1;
+	}
+
+	50% {
+		/* 图片爆炸时变成小块 */
+		opacity: 0;
+		transform: scale(0.5) rotate(360deg);
+	}
+
+	100% {
+		/* 小块散开 */
+		opacity: 0;
+		transform: scale(2) rotate(360deg);
+	}
+}
+
+#game li:hover {
+	transform: scale(1.2);
+	opacity: 0.9;
+	transition: 0.5s;
+}
+
+.heightLight {
+	border: 2px solid red !important;
+}
+@keyframes come {
+	0% {
+		transform: rotateX(-90deg);
+		scale: 0;
+
+	}
+
+	100% {
+		scale: 1;
+		transform: rotateX(0deg);
+	}
+}
+@keyframes lineLeft {
+	0% {
+		left: 0px;
+		opacity: 1;
+
+	}
+
+	50% {
+		opacity: 0.3;
+		left: 25px;
+	}
+
+	100% {
+		opacity: 1;
+		left: 50px;
+	}
+}
+
+@keyframes lineRight {
+	0% {
+		left: 0px;
+		opacity: 1;
+
+	}
+
+	50% {
+		opacity: 0.3;
+		left: -25px;
+	}
+
+	100% {
+
+		opacity: 1;
+		left: -50px;
+	}
+}
+
+@keyframes colTop {
+	0% {
+		top: 0px;
+		opacity: 1;
+	}
+
+	50% {
+		top: 25px;
+		opacity: 0.3;
+	}
+
+	100% {
+		top: 50px;
+		opacity: 1;
+
+	}
+}
+
+@keyframes colBottom {
+	0% {
+		top: 0px;
+		opacity: 1;
+	}
+
+	50% {
+		top: -25px;
+		opacity: 0.3;
+	}
+
+	100% {
+		top: -50px;
+		opacity: 1;
+
+	}
+}
